@@ -13,6 +13,11 @@
 		D601C68C2BF2179F004E9A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D601C68B2BF2179F004E9A64 /* Assets.xcassets */; };
 		D601C6912BF218B1004E9A64 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D601C6902BF218B1004E9A64 /* Location.swift */; };
 		D601C6942BF276F4004E9A64 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D601C6932BF276F4004E9A64 /* LocationsDataService.swift */; };
+		D6F6B09E2BF313A5000A5A84 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6B09D2BF313A5000A5A84 /* LocationsView.swift */; };
+		D6F6B0A02BF313B6000A5A84 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6B09F2BF313B6000A5A84 /* LocationsViewModel.swift */; };
+		D6F6B0A22BF35B8C000A5A84 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6B0A12BF35B8C000A5A84 /* LocationListView.swift */; };
+		D6F6B0A52BF38A09000A5A84 /* LocationsAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6B0A42BF38A09000A5A84 /* LocationsAnnotationView.swift */; };
+		D6F6B0A72BF39246000A5A84 /* LocationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6B0A62BF39246000A5A84 /* LocationsDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,12 @@
 		D601C68B2BF2179F004E9A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D601C6902BF218B1004E9A64 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D601C6932BF276F4004E9A64 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		D6F6B09D2BF313A5000A5A84 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		D6F6B09F2BF313B6000A5A84 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		D6F6B0A12BF35B8C000A5A84 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		D6F6B0A42BF38A09000A5A84 /* LocationsAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsAnnotationView.swift; sourceTree = "<group>"; };
+		D6F6B0A62BF39246000A5A84 /* LocationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDetailView.swift; sourceTree = "<group>"; };
+		D6F6B0A82BF3A908000A5A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,8 @@
 		D601C67C2BF2151D004E9A64 /* EightWondersMap */ = {
 			isa = PBXGroup;
 			children = (
+				D6F6B0A82BF3A908000A5A84 /* Info.plist */,
+				D6F6B0A32BF389E9000A5A84 /* Components */,
 				D601C6922BF276E9004E9A64 /* Services */,
 				D601C68D2BF21871004E9A64 /* Views */,
 				D601C68E2BF21878004E9A64 /* ViewModels */,
@@ -78,6 +91,9 @@
 		D601C68D2BF21871004E9A64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D6F6B09D2BF313A5000A5A84 /* LocationsView.swift */,
+				D6F6B0A12BF35B8C000A5A84 /* LocationListView.swift */,
+				D6F6B0A62BF39246000A5A84 /* LocationsDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -85,6 +101,7 @@
 		D601C68E2BF21878004E9A64 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D6F6B09F2BF313B6000A5A84 /* LocationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -103,6 +120,14 @@
 				D601C6932BF276F4004E9A64 /* LocationsDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		D6F6B0A32BF389E9000A5A84 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D6F6B0A42BF38A09000A5A84 /* LocationsAnnotationView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +201,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D601C6942BF276F4004E9A64 /* LocationsDataService.swift in Sources */,
+				D6F6B0A02BF313B6000A5A84 /* LocationsViewModel.swift in Sources */,
+				D6F6B0A72BF39246000A5A84 /* LocationsDetailView.swift in Sources */,
+				D6F6B0A52BF38A09000A5A84 /* LocationsAnnotationView.swift in Sources */,
 				D601C6802BF2151D004E9A64 /* ContentView.swift in Sources */,
+				D6F6B09E2BF313A5000A5A84 /* LocationsView.swift in Sources */,
+				D6F6B0A22BF35B8C000A5A84 /* LocationListView.swift in Sources */,
 				D601C6912BF218B1004E9A64 /* Location.swift in Sources */,
 				D601C67E2BF2151D004E9A64 /* EightWondersMapApp.swift in Sources */,
 			);
@@ -312,13 +342,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EightWondersMap/Preview Content\"";
+				DEVELOPMENT_TEAM = GMSGY63W5S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EightWondersMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,13 +372,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EightWondersMap/Preview Content\"";
+				DEVELOPMENT_TEAM = GMSGY63W5S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EightWondersMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
