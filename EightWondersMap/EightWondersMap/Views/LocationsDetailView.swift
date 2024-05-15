@@ -40,7 +40,10 @@ extension LocationsDetailView {
         Image(imageName)
           .resizable()
           .scaledToFill()
-
+          .frame(
+            width: UIScreen.main.bounds.width
+          )
+          .clipped()
       }
     }
     .frame(height: 400)
@@ -87,7 +90,7 @@ extension LocationsDetailView {
     }
     .allowsHitTesting(false)
   }
-  
+
   private var dismissButton: some View {
     Button {
       viewModel.toggleDetailLocationView()
